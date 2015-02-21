@@ -52,26 +52,99 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
 
 \begin{enumerate}
   \item[1.]
-		\includegraphics[width=10cm]{Task1-1Circuit}\\
-		\includegraphics[width=10cm]{Task1-1-Oscilloscope}
+  The circuit diagram shown below was simulated in $MultiSim$ to find the slew-rate(SR) of a op amp.\\
+    \begin{minipage}{\linewidth}
+      \centering       
+       \includegraphics[width=10cm]{Task1-1Circuit}\\
+   	 \captionof{figure}{yoyo} 
+    \end{minipage}
+    
+Fig 2 shows the measurements from the Oscilloscope. The diagram shows the effect of slew rate limiting on the output rectangular waveform.\\
+    \begin{minipage}{\linewidth}
+      \centering       
+       \includegraphics[width=10cm]{Task1-1-Oscilloscope}\\
+      \captionof{figure}{} 
+    \end{minipage}
+		% \includegraphics[width=10cm]{Task1-1Circuit}\\
+		% \includegraphics[width=10cm]{Task1-1-Oscilloscope}\\
   
   \item[2.]
-  		\includegraphics[width=10cm]{Task1-2-Circuit}\\
-		\includegraphics[width=10cm]{Task1-2-ACAnalysis}
-  \item[3.]
-    	\includegraphics[width=10cm]{Task1-3-Circuit}\\
-		\includegraphics[width=10cm]{Task1-3-DCAnalysis}
-  \item[4.]
+	The circuit diagram shown below was simulated with AC analysis to determine the gain-bandwidth product(GBW) of the op amp.  
   
-	\begin{tabular}{l*{3}{c}r}
-	$\mu$ A741 op-Amp              & DataSheet & Simulation  \\
-	\hline
-	Slew Rate [$SR$]   & 6 & 4 \\
-	Gain-Bandwidth [$GBW$]              & 6 & 3 \\
-	DC Differential Gain [$A_{d}$]             & 6 & 2 \\
-	Input Offset Voltage [$V_{os}$]           & 6 & 2 \\
-	\end{tabular}
+      \begin{minipage}{\linewidth}
+      \centering
+        \includegraphics[width=10cm]{Task1-2-Circuit}\\
+    \captionof{figure}{} 
+    \end{minipage}
+    
+    Fig 4 shows the measurments from the AC analysis of the circuit. 
+    $$ BW \simeq f_{H} $$
+    $$ GB = |A_{G}|BW $$
+    
+    We know that the gain is 1 of a voltage follower.
+    $$ GB = BW $$
+    
+    The $f_{H}$ is 995.486 kHz in Fig 4. So the gain-bandwidth product is
+    $$ GB = 995.486  kHz$$
+    
+    \begin{minipage}{\linewidth}
+      \centering
+        \includegraphics[width=10cm]{Task1-2-ACAnalysis}\\
+    \captionof{figure}{}     
+    \end{minipage}
+  % 		\includegraphics[width=10cm]{Task1-2-Circuit}\\
+		% \includegraphics[width=10cm]{Task1-2-ACAnalysis}\\
+  \item[3.]
+  
+  
+  The circuit below was simulated in MultiSim to determine the DC differential gain $A_{d}$ and the input offset voltage $V_{OS}$ of the op amp.
+  
+      \begin{minipage}{\linewidth}
+      \centering
+      \includegraphics[width=10cm]{Task1-3-Circuit}\\
+    \captionof{figure}{}   
+    \end{minipage}
+    
+Fig 6 show the result of the DC analysis of the circuit in Fig 5. Hence that the DC differential gain is
+$$A_{d} = 206.505 \frac{V}{mV} $$    
+    
+    
+        \begin{minipage}{\linewidth}
+      \centering
+      \includegraphics[width=10cm]{Task1-3-DCAnalysis}\\
+    \captionof{figure}{}    
+    \end{minipage}\\
+    
+Fig 7 shows the result of the DC analysis and hence the offset Voltage can be determine to be
+$$ V_{OS} = 1.147 mV $$\\
+    
+    
+\begin{minipage}{\linewidth}
+	\centering
+    \includegraphics[width=10cm]{Task1-3-Vos}\\
+    \captionof{figure}{}    
+    \end{minipage}\\
+    
+    
+ \item[4.]
+ 
 
+In table 1 there you can see the diffrence between theoretical values and simulated values of the $\mu A741$ op amp.\\
+
+\begin{minipage}{\linewidth}
+
+\begin{center}
+	\begin{tabular}{l*{3}{c}r}{Hello}
+		$\mu$ A741 op-Amp              & DataSheet & Simulation  \\
+		\hline
+		Slew Rate [$SR$] & 0.5 $ [\frac{V}{\mu s}]$ & 0.456 $ 		 [\frac{V}{\mu s}]$ \\
+	Gain-Bandwidth [$GBW$]& 1 $ [MHz]$  & 995.487 $ [MHz]$ \\
+	DC Differential Gain [$A_{d}$] & 200 $[\frac{V}{mV}]$ & 206.505 $[\frac{V}{mV}]$ \\
+	Input Offset Voltage [$V_{os}$] & 5 $[mV]$& 1.147 $[mV]$ \\
+		\end{tabular}
+		\captionof{table}{Theoretical and simulated values of $\mu$A741 op amp}
+\end{center}
+\end{minipage}
 \end{enumerate}
 
 \section*{Task 2: Frequency Response of Inverting Amplifier}
@@ -79,8 +152,21 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
 \begin{enumerate}
   \item[1.]
   
+  Figure below shows the inverting amplifier that we simulated in MultiSim. The task was to determine the 3dB corner frequency of the op amp with AC analysis.\\
+  \begin{minipage}{\linewidth}
+	\centering
+  		\includegraphics[width=10cm]{Task2-1-Circuit}\\
+    \captionof{figure}{}    
+    \end{minipage}\\
+
   \item[2.]
   
+  
+    \begin{minipage}{\linewidth}
+	\centering
+  		\includegraphics[width=10cm]{Task2-1-ACAnalysis}\\
+    \captionof{figure}{}    
+    \end{minipage}\\
 \end{enumerate}
 
 \section*{Task 3: Op Amplifies Design}
@@ -158,13 +244,13 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
   \begin{minipage}{\linewidth}
     	\centering
 		\captionof{figure}{The transient analysis were the capacitor value is $1mF$ instead of $100\mu F$}        
-        \includegraphics[width=13cm]{4_4.jpg}
+%        \includegraphics[width=13cm]{4_4.jpg}
   \end{minipage}
     
    The ripple voltage should not be larger than 2 $\%$ of the peak voltage, $V_r(max) = 0.02 \cdot 9.935 V = 0.1987 V$. And from the graph and cursors the actual ripple voltage after the change: $$ V_r = 9.2364 \: V - 9.0928 \: V = 0.1436 \: V < V_r(max) = 0.1987 \: V$$
    
 
-
+\end{enumerate}
 
 
 
