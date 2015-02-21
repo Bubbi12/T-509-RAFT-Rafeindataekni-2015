@@ -30,7 +30,7 @@
    
 \title{Assignment 1 \\ T-509-RAFT \\ Electronics} % Title
 
-\author{Arnar Ingi Halldórsson \\ Hjörleifur G Bergsteinsson \\ Snorri Stefánsson} % Author name
+\author{Arnar Ingi Halldórsson \\ Hjörleifur G. Bergsteinsson \\ Snorri Stefánsson} % Author name
 \begin{document}
 
 \maketitle % Insert the title, author and date
@@ -57,17 +57,17 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
       \centering       
        \includegraphics[width=10cm]{Task1-1Circuit}\\
      \captionof{figure}{yoyo} 
-    \end{minipage}
-    
-Fig 2 shows the measurements from the Oscilloscope. The diagram shows the effect of slew rate limiting on the output rectangular waveform.\\
+    \end{minipage}\\
+\pagebreak
+\pagebreak
+
+In Fig 2 shows the measurements from the Oscilloscope. The diagram shows the effect of the slew rate limiting on the output rectangular waveform.\\
     \begin{minipage}{\linewidth}
       \centering       
        \includegraphics[width=10cm]{Task1-1-Oscilloscope}\\
       \captionof{figure}{} 
     \end{minipage}
-    % \includegraphics[width=10cm]{Task1-1Circuit}\\
-    % \includegraphics[width=10cm]{Task1-1-Oscilloscope}\\
-  
+$$ \dfrac{dv_{o}}{dt}|_{max} = \dfrac{-19.947 \ V}{-43.719\ \mu s} = 0.456 \frac{V}{\mu s} $$
   \item[2.]
   The circuit diagram shown below was simulated with AC analysis to determine the gain-bandwidth product(GBW) of the op amp.  
   
@@ -77,11 +77,11 @@ Fig 2 shows the measurements from the Oscilloscope. The diagram shows the effect
     \captionof{figure}{} 
     \end{minipage}
     
-    Fig 4 shows the measurments from the AC analysis of the circuit. 
+   In Fig 4 shows the measurements from the AC analysis of the circuit. 
     $$ BW \simeq f_{H} $$
     $$ GB = |A_{G}|BW $$
     
-    We know that the gain is 1 of a voltage follower.
+    The gain is unity gain buffer because of the voltage follower. 
     $$ GB = BW $$
     
     The $f_{H}$ is 995.486 kHz in Fig 4. So the gain-bandwidth product is
@@ -89,7 +89,7 @@ Fig 2 shows the measurements from the Oscilloscope. The diagram shows the effect
     
     \begin{minipage}{\linewidth}
       \centering
-        \includegraphics[width=10cm]{Task1-2-ACAnalysis}\\
+        \includegraphics[width=14cm]{Task1-2-ACAnalysis}\\
     \captionof{figure}{}     
     \end{minipage}
   %     \includegraphics[width=10cm]{Task1-2-Circuit}\\
@@ -105,7 +105,7 @@ Fig 2 shows the measurements from the Oscilloscope. The diagram shows the effect
     \captionof{figure}{}   
     \end{minipage}
     
-Fig 6 show the result of the DC analysis of the circuit in Fig 5. Hence that the DC differential gain is
+In Fig 6 show the result of the DC analysis of the circuit in Fig 5. Hence that the DC differential gain is
 $$A_{d} = 206.505 \frac{V}{mV} $$    
     
     
@@ -113,9 +113,8 @@ $$A_{d} = 206.505 \frac{V}{mV} $$
       \centering
       \includegraphics[width=10cm]{Task1-3-DCAnalysis}\\
     \captionof{figure}{}    
-    \end{minipage}\\
-    
-Fig 7 shows the result of the DC analysis and hence the offset Voltage can be determine to be
+    \end{minipage}\\   
+In Fig 7 shows the result of the DC analysis and hence the offset Voltage can be determine to be
 $$ V_{OS} = 1.147 mV $$\\
     
     
@@ -129,18 +128,20 @@ $$ V_{OS} = 1.147 mV $$\\
  \item[4.]
  
 
-In table 1 there you can see the diffrence between theoretical values and simulated values of the $\mu A741$ op amp.\\
+Diffrence between theoretical values and simulated values of the $\mu A741$ op amp can be seen in table 1.\\
 
 \begin{minipage}{\linewidth}
 
 \begin{center}
-  \begin{tabular}{l*{3}{c}r}{Hello}
-    $\mu$ A741 op-Amp              & DataSheet & Simulation  \\
-    \hline
-    Slew Rate [$SR$] & 0.5 $ [\frac{V}{\mu s}]$ & 0.456 $      [\frac{V}{\mu s}]$ \\
-  Gain-Bandwidth [$GBW$]& 1 $ [MHz]$  & 995.487 $ [MHz]$ \\
-  DC Differential Gain [$A_{d}$] & 200 $[\frac{V}{mV}]$ & 206.505 $[\frac{V}{mV}]$ \\
-  Input Offset Voltage [$V_{os}$] & 5 $[mV]$& 1.147 $[mV]$ \\
+  \begin{tabular}{r l r l r l}
+	\multicolumn{2}{c}{$\mu$A741 op-Amp} &   
+  \multicolumn{2}{c}{DataSheet} &
+  \multicolumn{2}{c}{Simulation}\\
+  \hline
+    Slew Rate & [$SR$] & 0.5 & $ [\frac{V}{\mu s}]$ & 0.456& $      [\frac{V}{\mu s}]$ \\
+  Gain-Bandwidth & [$GBW$]& 1 &$ [MHz]$  & 995.487 &$ [MHz]$ \\
+  DC Differential Gain &[$A_{d}$] & 200& $[\frac{V}{mV}]$ & 206.505& $[\frac{V}{mV}]$ \\
+  Input Offset Voltage &[$V_{os}$] & 5& $[mV]$& 1.147& $[mV]$ \\
     \end{tabular}
     \captionof{table}{Theoretical and simulated values of $\mu$A741 op amp}
 \end{center}
@@ -158,15 +159,20 @@ In table 1 there you can see the diffrence between theoretical values and simula
       \includegraphics[width=10cm]{Task2-1-Circuit}\\
     \captionof{figure}{}    
     \end{minipage}\\
-
-  \item[2.]
-  
-  
-    \begin{minipage}{\linewidth}
+Figure 9 shows the AC analysis and hence the 3dB  frequency is
+$$ f_{3dB} = 9.910 \ kHz $$
+  \begin{minipage}{\linewidth}
   \centering
-      \includegraphics[width=10cm]{Task2-1-ACAnalysis}\\
+      \includegraphics[width=14cm]{Task2-1-ACAnalysis}\\
     \captionof{figure}{}    
     \end{minipage}\\
+
+  \item[2.]
+  By using the theoretical values to compare to simulated result of the 3 dB frequency.
+$$f_{t} = A_{t}w_{b}$$
+$$ f_{b} = \frac{f_{t}}{A_{b}} = \frac{1\ MHz}{100 \frac{V}{V}} = 10\ kHz $$
+Which is close to the simulated value from the AC analysis.  
+
 \end{enumerate}
 \pagebreak
 \section*{Task 3: Op Amplifies Design}
