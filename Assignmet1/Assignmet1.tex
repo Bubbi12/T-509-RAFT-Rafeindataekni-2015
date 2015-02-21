@@ -52,16 +52,17 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
 
 \begin{enumerate}
   \item[1.]
-  The circuit diagram shown below was simulated in $MultiSim$ to find the slew-rate(SR) of a op amp.\\
+  The circuit diagram shown below was simulated in $MultiSim$ to find the slew-rate(SR) of an op amp.\\
     \begin{minipage}{\linewidth}
       \centering       
        \includegraphics[width=10cm]{Task1-1Circuit}\\
-     \captionof{figure}{yoyo} 
+     \captionof{figure}{The circuit in Task 1} 
     \end{minipage}\\
 \pagebreak
 \pagebreak
 
-In Fig 2 shows the measurements from the Oscilloscope. The diagram shows the effect of the slew rate limiting on the output rectangular waveform.\\
+Fig 2 shows the measurements from the Oscilloscope. The diagram shows the effect of the slew rate limiting the output and its rectangular waveform.\\
+	
     \begin{minipage}{\linewidth}
       \centering       
        \includegraphics[width=10cm]{Task1-1-Oscilloscope}\\
@@ -77,7 +78,7 @@ $$ \dfrac{dv_{o}}{dt}|_{max} = \dfrac{-19.947 \ V}{-43.719\ \mu s} = 0.456 \frac
     \captionof{figure}{} 
     \end{minipage}
     
-   In Fig 4 shows the measurements from the AC analysis of the circuit. 
+   Fig 4 shows the measurements from the AC analysis of the circuit. 
     $$ BW \simeq f_{H} $$
     $$ GB = |A_{G}|BW $$
     
@@ -105,7 +106,7 @@ $$ \dfrac{dv_{o}}{dt}|_{max} = \dfrac{-19.947 \ V}{-43.719\ \mu s} = 0.456 \frac
     \captionof{figure}{}   
     \end{minipage}
     
-In Fig 6 show the result of the DC analysis of the circuit in Fig 5. Hence that the DC differential gain is
+Fig 6 shows the result of the DC analysis of the circuit in Fig 5. Hence that the DC differential gain is
 $$A_{d} = 206.505 \frac{V}{mV} $$    
     
     
@@ -114,7 +115,7 @@ $$A_{d} = 206.505 \frac{V}{mV} $$
       \includegraphics[width=10cm]{Task1-3-DCAnalysis}\\
     \captionof{figure}{}    
     \end{minipage}\\   
-In Fig 7 shows the result of the DC analysis and hence the offset Voltage can be determine to be
+Fig 7 shows the result of the DC analysis and hence the offset Voltage can be determined to be:
 $$ V_{OS} = 1.147 mV $$\\
     
     
@@ -128,7 +129,7 @@ $$ V_{OS} = 1.147 mV $$\\
  \item[4.]
  
 
-Diffrence between theoretical values and simulated values of the $\mu A741$ op amp can be seen in table 1.\\
+Diffrence between theoretical and simulated values of the $\mu A741$ op amp can be seen in table 1.\\
 
 \begin{minipage}{\linewidth}
 
@@ -138,9 +139,13 @@ Diffrence between theoretical values and simulated values of the $\mu A741$ op a
   \multicolumn{2}{c}{DataSheet} &
   \multicolumn{2}{c}{Simulation}\\
   \hline
-    Slew Rate & [$SR$] & 0.5 & $ [\frac{V}{\mu s}]$ & 0.456& $      [\frac{V}{\mu s}]$ \\
+  \vspace{0.2em}
+  Slew Rate & [$SR$] & 0.5 & $ [\frac{V}{\mu s}]$ & 0.456& $      [\frac{V}{\mu s}]$ \\
+  	\vspace{0.2em}
   Gain-Bandwidth & [$GBW$]& 1 &$ [MHz]$  & 995.487 &$ [MHz]$ \\
+  	\vspace{0.2em}
   DC Differential Gain &[$A_{d}$] & 200& $[\frac{V}{mV}]$ & 206.505& $[\frac{V}{mV}]$ \\
+  	\vspace{0.2em}
   Input Offset Voltage &[$V_{os}$] & 5& $[mV]$& 1.147& $[mV]$ \\
     \end{tabular}
     \captionof{table}{Theoretical and simulated values of $\mu$A741 op amp}
@@ -179,7 +184,7 @@ Which is close to the simulated value from the AC analysis.
 
 \begin{enumerate}
   \item[1.]
-  An op-amp-based integrator was designed with the dc gain equal to -10 V/V where \\R1 = 200$\Omega$ and R2 = 2k$\Omega$ as can be seen in fig X. The value of the capacitance C of the integrator was calculated so that its 3dB frequency is 50kHz. %Knowing the gain bandwith product of the $\mu$A741 op amp to be 1MHz the capacitance can be calculated with the following formula.
+  An op-amp-based integrator was designed with the dc gain equal to -10 V/V where \\R1 = 200$\Omega$ and R2 = 2k$\Omega$ as can be seen in fig 10. The value of the capacitance C of the integrator was calculated so that its 3dB frequency is 50kHz. %Knowing the gain bandwith product of the $\mu$A741 op amp to be 1MHz the capacitance can be calculated with the following formula.
 $$\omega_0 = \frac{1}{C\cdot R_2} \Leftrightarrow C = \frac{1}{\omega_0 \cdot R_2} \Leftrightarrow C  = \frac{1}{50\text{kHz}\cdot 2\pi \cdot 2k\Omega} = 1.592 nF $$
   \begin{minipage}{\linewidth}
     	\centering       
@@ -187,7 +192,7 @@ $$\omega_0 = \frac{1}{C\cdot R_2} \Leftrightarrow C = \frac{1}{\omega_0 \cdot R_
         \captionof{figure}{Circuit diagram of an op-amp-based integrator} 
     \end{minipage}
   \item[2.]
-  Simulation of the integrator seen in fig X, shows that the 3dB frequency is 33.8kHz. This is not as predicted by theory from task 3.1. Previous calculations were done assuming an ideal amplifier which is not correct. There is a significant difference between the result and the expected result so further analysis must me done to find the correct value of the capacitance C so that the 3dB frequency will be 50kHz.\\
+  Simulation of the integrator seen in fig 11, shows that the 3dB frequency is 33.8kHz. This is not as predicted by theory from task 3.1. Previous calculations were done assuming an ideal amplifier which is not correct. There is a significant difference between the result and the expected result so further analysis must me done to find the correct value of the capacitance C so that the 3dB frequency will be 50kHz.\\
   \begin{minipage}{\linewidth}
     	\centering       
         \includegraphics[width=14cm]{Task3_2.png}
@@ -199,7 +204,7 @@ $$\omega_0 = \frac{1}{C\cdot R_2} \Leftrightarrow C = \frac{1}{\omega_0 \cdot R_
   $$\| \frac{V_o(j\omega)}{V_i(j\omega)} \| = \| \frac{\frac{R_2}{R_1}}{1+j\omega \cdot C \cdot R_2} \| = \frac{\frac{2k\Omega}{200\Omega}}{\sqrt{1^2+(10^6 \cdot 2\pi \cdot C \cdot 2k\Omega)^2}} = 1$$
   $$\Leftrightarrow C = \sqrt{\frac{\frac{R_2}{R_1}^2-1}{(\omega \cdot R_2)^2}}  = \sqrt{\frac{10^2-1}{(10^6 \cdot 2\pi \cdot 2k\Omega)^2}} = 0.792nF$$
   
-Performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48.66kHz as shown in fig X.\\
+Performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48.66kHz as shown in fig 12.\\
 \begin{minipage}{\linewidth}
     	\centering       
         \includegraphics[width=14cm]{Task3_3.png}
@@ -216,8 +221,8 @@ Performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48.66
   
 	\begin{minipage}{\linewidth}
     	\centering
-		\captionof{figure}{}        
         \includegraphics[width=13cm]{4_1.jpg}
+        \captionof{figure}{}  
     \end{minipage}
     
   
@@ -226,8 +231,8 @@ Performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48.66
   \\
 	\begin{minipage}{\linewidth}
     	\centering
-		\captionof{figure}{Transient analysis of circuit the circuit in the last figure.}        
         \includegraphics[width=13cm]{4_2.jpg}
+        \captionof{figure}{Transient analysis the circuit in the last figure.}  
     \end{minipage}
 
     \pagebreak
@@ -235,8 +240,8 @@ Performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48.66
     
     \begin{minipage}{\linewidth}
     	\centering
-		\captionof{figure}{}        
         \includegraphics[width=9cm]{table_4_1.png}
+        \captionof{figure}{}
     \end{minipage}
     
     \vspace{2em}
@@ -247,25 +252,34 @@ Performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48.66
     
     \begin{minipage}{\linewidth}
     	\centering
-		\captionof{figure}{}        
         \includegraphics[width=13cm]{4_3.jpg}
+        \captionof{figure}{} 
     \end{minipage}
     
     \begin{minipage}{\linewidth}
     	\centering
-		\captionof{figure}{}        
         \includegraphics[width=9cm]{table_4_2.png}
+        \captionof{figure}{}
     \end{minipage}
     
     \vspace{2em}
     
 	The ripple voltage can be calculated from the graph. The maximum difference in voltage over the diode over one period is the ripple voltage so it can simply be seen from the graph and table, using the cursors: $$ V_r = 9.5798 V - 7.4841 V = 2.096 V$$
-    The theoretical ripple voltage value can be calculated with: $$ V_r = \dfrac{V_p}{fCR} = \dfrac{10}{50 \cdot 100 \cdot 10^{-6} \cdot 10^3} = 2 V$$
-    \vspace{2em}
+    The theoretical ripple voltage value can then be calculated: $$ V_r = \dfrac{V_p}{fCR} = \dfrac{10}{50 \cdot 100 \cdot 10^{-6} \cdot 10^3} = 2 V$$
   
   \item[$\bold{3.}$]
   
-  	The ripple voltage will then be: $V_r = V_p \cdot 0.02 = 0.1987 V$. Now we can calculate the maximum value of the capacitance, C: $$ C = \dfrac{V_p}{f R V_r} = \dfrac{V_p}{f R V_p \cdot 0.02} = \dfrac{1}{f R \cdot 0.02} = \dfrac{1}{50 \cdot 10^3 \cdot 0.02} = 1mF $$
+  	The ripple voltage will then be: $V_r(max) = V_p \cdot 0.02 = 0.1987 V$. Now we can calculate the maximum value of the capacitance, C: $$ C = \dfrac{V_p}{f R V_r} = \dfrac{V_p}{f R V_p \cdot 0.02} = \dfrac{1}{f R \cdot 0.02} = \dfrac{1}{50 \cdot 10^3 \cdot 0.02} = 1mF $$
+  	
+  	\begin{minipage}{\linewidth}
+    	\centering
+        \includegraphics[width=15cm]{4_4.jpg}
+        \captionof{figure}{Now with the capacitor value as $1mF$}
+    \end{minipage}
+    \vspace{1em}
+    
+    We then read from the table in figure 18. $$ V_r = 9.2364 \: V- 9.0928\: V = 0.1436\: V < V_r(max) = 0.1987\: V$$ 
+    So the analysis holds and the ripple voltage from the analysis is smaller then the maximum value.
   
 \end{enumerate}
 
