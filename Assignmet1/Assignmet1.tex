@@ -12,11 +12,14 @@
 
 
 %\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {myndir/} }
 \usepackage[T1]{fontenc} 
 \usepackage[english]{babel}
+
 \usepackage[utf8]{inputenc} 
 \usepackage{graphics}
-\usepackage[pdftex]{graphicx}
+%\usepackage[pdftex]{graphicx}
 
 \usepackage{caption}
 \usepackage{subcaption}
@@ -49,13 +52,26 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
 
 \begin{enumerate}
   \item[1.]
+		\includegraphics[width=10cm]{Task1-1Circuit}\\
+		\includegraphics[width=10cm]{Task1-1-Oscilloscope}
   
   \item[2.]
-  
+  		\includegraphics[width=10cm]{Task1-2-Circuit}\\
+		\includegraphics[width=10cm]{Task1-2-ACAnalysis}
   \item[3.]
-  
+    	\includegraphics[width=10cm]{Task1-3-Circuit}\\
+		\includegraphics[width=10cm]{Task1-3-DCAnalysis}
   \item[4.]
   
+	\begin{tabular}{l*{3}{c}r}
+	$\mu$ A741 op-Amp              & DataSheet & Simulation  \\
+	\hline
+	Slew Rate [$SR$]   & 6 & 4 \\
+	Gain-Bandwidth [$GBW$]              & 6 & 3 \\
+	DC Differential Gain [$A_{d}$]             & 6 & 2 \\
+	Input Offset Voltage [$V_{os}$]           & 6 & 2 \\
+	\end{tabular}
+
 \end{enumerate}
 
 \section*{Task 2: Frequency Response of Inverting Amplifier}
@@ -91,3 +107,4 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
 
 
 \end{document}
+\\
