@@ -23,10 +23,10 @@
 
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage[top=2in, bottom=1.5in, left=1in, right=1in]{geometry}
+%\usepackage{titling}
 
-\usepackage{titling}
-
-\setlength{\droptitle}{-10em}
+%\setlength{\droptitle}{-10em}
    
 \title{Assignment 1 \\ T-509-RAFT \\ Electronics} % Title
 
@@ -73,7 +73,6 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
 	\end{tabular}
 
 \end{enumerate}
-
 \section*{Task 2: Frequency Response of Inverting Amplifier}
 
 \begin{enumerate}
@@ -82,21 +81,41 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
   \item[2.]
   
 \end{enumerate}
-
+\pagebreak
 \section*{Task 3: Op Amplifies Design}
 
 \begin{enumerate}
   \item[1.]
-  
+  An op-amp-based integrator was designed with the dc gain equal to -10 V/V where \\R1 = 200$\Omega$ and R2 = 2k$\Omega$ as can be seen in fig X. The value of the capacitance C of the integrator was calculated so that its 3dB frequency is 50kHz. %Knowing the gain bandwith product of the $\mu$A741 op amp to be 1MHz the capacitance can be calculated with the following formula.
+$$\omega_0 = \frac{1}{C\cdot R_2} \Leftrightarrow C = \frac{1}{\omega_0 \cdot R_2} \Leftrightarrow C  = \frac{1}{50\text{kHz}\cdot 2\pi \cdot 2k\Omega} = 1.592 nF $$
+  \begin{minipage}{\linewidth}
+    	\centering       
+        \includegraphics[width=7cm]{Task3_1.png}
+        \captionof{figure}{Circuit diagram of an op-amp-based integrator} 
+    \end{minipage}
   \item[2.]
-  
+  Simulation of the integrator seen in fig X, shows that the 3dB frequency is 33.8kHz. This is not as predicted by theory from task 3.1. Previous calculations were done assuming an ideal amplifier which is not correct. There is a significant difference between the result and the expected result so further analysis must me done to find the correct value of the capacitance C so that the 3dB frequency will be 50kHz.\\
+  \begin{minipage}{\linewidth}
+    	\centering       
+        \includegraphics[width=14cm]{Task3_2.png}
+        \captionof{figure}{AC analysis of the op-amp-based integrator with C = 1.592nF. } 
+    \end{minipage} 
+    \pagebreak
   \item[3.]
+  The capacitance was determined again neglecting the finite GBW. Assuming that the gain will reach zero dB, the transfer function is equal to one since log(1) = 0 dB. 
+  $$\| \frac{V_o(j\omega)}{V_i(j\omega)} \| = \| \frac{\frac{R_2}{R_1}}{1+j\omega \cdot C \cdot R_2} \| = \frac{\frac{2k\Omega}{200\Omega}}{\sqrt{1^2+(10^6 \cdot 2\pi \cdot C \cdot 2k\Omega)^2}} = 1$$
+  $$\Leftrightarrow C = \sqrt{\frac{\frac{R_2}{R_1}^2-1}{(\omega \cdot R_2)^2}}  = \sqrt{\frac{10^2-1}{(10^6 \cdot 2\pi \cdot 2k\Omega)^2}} = 0.792nF$$
   
+Performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48.66kHz as shown in fig X.\\
+\begin{minipage}{\linewidth}
+    	\centering       
+        \includegraphics[width=14cm]{Task3_3.png}
+        \captionof{figure}{AC analysis of the op-amp-based integrator with C = 0.792nF. } 
+    \end{minipage}
 \end{enumerate}
-
+\pagebreak
 \section*{Task 4: Half - Wave Rectifier}
 
-\begin{enumerate}
 \begin{enumerate}
   \item[$\bold{1.}$]
   Here is the half-wave rectifier circuit:
@@ -158,7 +177,6 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
 \end{enumerate}
 
   
-\end{enumerate}
 
 
 \end{document}
