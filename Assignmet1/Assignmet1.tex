@@ -118,7 +118,7 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
         \includegraphics[width=13cm]{4_2.jpg}
     \end{minipage}
 
-    \pagebreak
+
     The data for the cursors on the previous figure:\\
     
     \begin{minipage}{\linewidth}
@@ -155,7 +155,16 @@ Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
   
   	The ripple voltage will then be: $V_r = V_p \cdot 0.02 = 0.1987 V$. Now we can calculate the maximum value of the capacitance, C: $$ C = \dfrac{V_p}{f R V_r} = \dfrac{V_p}{f R V_p \cdot 0.02} = \dfrac{1}{f R \cdot 0.02} = \dfrac{1}{50 \cdot 10^3 \cdot 0.02} = 1mF $$
   
-\end{enumerate}
+  \begin{minipage}{\linewidth}
+    	\centering
+		\captionof{figure}{The transient analysis were the capacitor value is $1mF$ instead of $100\mu F$}        
+        \includegraphics[width=13cm]{4_4.jpg}
+  \end{minipage}
+    
+   The ripple voltage should not be larger than 2 $\%$ of the peak voltage, $V_r(max) = 0.02 \cdot 9.935 V = 0.1987 V$. And from the graph and cursors the actual ripple voltage after the change: $$ V_r = 9.2364 \: V - 9.0928 \: V = 0.1436 \: V < V_r(max) = 0.1987 \: V$$
+   
+
+
 
 
 
