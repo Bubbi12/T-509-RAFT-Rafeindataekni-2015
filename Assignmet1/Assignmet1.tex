@@ -53,7 +53,7 @@ The purpose of the assignment is to determine performance parameters of the oper
 
 \begin{enumerate}
   \item[1.]
-  The circuit diagram in figure 1 was simulated in $MultiSim$ to find the slew-rate (SR) of an op amp.\\
+  The circuit diagram in figure 1 was simulated in $MultiSim$ to find the slew-rate (SR) of a 741 op amp.\\
     \begin{minipage}{\linewidth}
       \centering       
        \includegraphics[width=10cm]{Task1-1Circuit}\\
@@ -62,16 +62,16 @@ The purpose of the assignment is to determine performance parameters of the oper
 \pagebreak
 \pagebreak
 
-In figure 2 shows the measurements from the Oscilloscope. The diagram shows the effect of the slew rate limiting the output and its rectangular waveform.\\
+Measurements from the Oscilloscope can be shown in figure 2. The diagram shows the effect of the slew rate limiting the output and its rectangular waveform.\\
 	
     \begin{minipage}{\linewidth}
       \centering       
        \includegraphics[width=10cm]{Task1-1-Oscilloscope}\\
       \captionof{figure}{Data from the oscilloscope} 
     \end{minipage}
-$$ \dfrac{dv_{o}}{dt}|_{max} = \dfrac{-19.947 \ V}{-43.719\ \mu s} = 0.456\ \frac{V}{\mu s} $$
+$$ \text{SR} = \dfrac{dv_{o}}{dt}|_{max} = \dfrac{-19.947 \ V}{-43.719\ \mu s} = 0.456\ \frac{V}{\mu s} $$
   \item[2.]
-  The circuit diagram shown below was simulated with AC analysis to determine the gain-bandwidth product (GBW) of the op amp.  
+  The circuit diagram shown below in figure 3 was simulated with an AC analysis to determine the gain-bandwidth product (GBW) of the op amp.  
   
       \begin{minipage}{\linewidth}
       \centering
@@ -79,11 +79,11 @@ $$ \dfrac{dv_{o}}{dt}|_{max} = \dfrac{-19.947 \ V}{-43.719\ \mu s} = 0.456\ \fra
     \captionof{figure}{Circuit in Task 1.2} 
     \end{minipage}
     
-   In figure 4 the measurements from the AC analysis of the circuit can be observed. By finding the $f_H$ from figure 4 it's possible to determine the gain-bandwidth product.
+   The measurements from the AC analysis of the circuit can be observed in figure 4. By finding the $f_H$ the gain-bandwidth product can be calculated.
     $$ BW \simeq f_{H} $$
     $$ GB = |A_{G}|BW $$
     
-    The gain is unity gain buffer because of the voltage follower. 
+    This is a voltage follower so it has unity gain, $|A_{G}| = 1$. 
     $$ GB = BW $$
     
     The $f_{H}$ is 995.486 kHz as seen in figure 4. Hence the gain-bandwidth product is:
@@ -107,7 +107,7 @@ $$ \dfrac{dv_{o}}{dt}|_{max} = \dfrac{-19.947 \ V}{-43.719\ \mu s} = 0.456\ \fra
     \captionof{figure}{The circuit diagram used in task 3.1}   
     \end{minipage}
     
-In figure 6 the result of the DC analysis of the circuit in figure 5 can be observed. Hence that the DC differential gain is:
+In figure 6 the result of the DC analysis of the circuit in figure 5 can be observed. Hence the DC differential gain is:
 $$A_{d} = 206.505\ \frac{V}{mV} $$    
     
     
@@ -117,21 +117,21 @@ $$A_{d} = 206.505\ \frac{V}{mV} $$
     \captionof{figure}{DC analysis from circuit in figure 5}    
     \end{minipage}\\   
     
-Figure 7 shows the result of the DC analysis and hence the offset voltage can be determined to be:
+Figure 7 shows the result of the DC analysis. The offset voltage can be determined to be:
 $$ V_{OS} = 1.147\ mV $$\\
     
     
 \begin{minipage}{\linewidth}
   \centering
     \includegraphics[width=10cm]{Task1-3-Vos}\\
-    \captionof{figure}{The figure 6 closely observed and the offset voltage determined}    
+    \captionof{figure}{A closer look of the DC analysis done in figure 6 that allows the offset voltage to be determined}    
     \end{minipage}\\
     
-    
+    \pagebreak
  \item[4.]
  
 
-The difference between theoretical and simulated values of the $\mu A741$ op amp can be observed in table 1.\\
+The difference between theoretical and simulated values of the $\mu A741$ op amp can be \\observed in table 1.\\
 
 \begin{minipage}{\linewidth}
 
@@ -144,7 +144,7 @@ The difference between theoretical and simulated values of the $\mu A741$ op amp
   \vspace{0.2em}
   Slew Rate & [$SR$] & 0.5 & $ [\frac{V}{\mu s}]$ & 0.456& $      [\frac{V}{\mu s}]$ \\
   	\vspace{0.2em}
-  Gain-Bandwidth & [$GBW$]& 1 &$ [MHz]$  & 995.487 &$ [MHz]$ \\
+  Gain-Bandwidth & [$GBW$]& 1 &$ [MHz]$  & 995.487 &$ [kHz]$ \\
   	\vspace{0.2em}
   DC Differential Gain &[$A_{d}$] & 200& $[\frac{V}{mV}]$ & 206.505& $[\frac{V}{mV}]$ \\
   	\vspace{0.2em}
@@ -160,26 +160,29 @@ The difference between theoretical and simulated values of the $\mu A741$ op amp
 \begin{enumerate}
   \item[1.]
   
-  In figure 8 shown below the inverting amplifier that we simulated in $MultiSim$. The task was to determine the 3 dB corner frequency of the op amp with AC analysis.\\
+  In figure 8 shown below the inverting amplifier is simulated in $MultiSim$. The task was to determine the 3 dB corner frequency of the op amp with an AC analysis.\\
   \begin{minipage}{\linewidth}
   \centering
       \includegraphics[width=10cm]{Task2-1-Circuit}\\
     \captionof{figure}{The circuit in task 2.1}    
     \end{minipage}\\
-    
-Figure 9 shows the AC analysis and hence the 3dB  frequency is
-$$ f_{3dB} = 9.910 \ kHz $$
+\pagebreak 
+
+
   \begin{minipage}{\linewidth}
   \centering
       \includegraphics[width=14cm]{Task2-1-ACAnalysis}\\
     \captionof{figure}{AC analysis of the circuit shown in figure 8}    
     \end{minipage}\\
+    
+Figure 9 shows the AC analysis and from it the 3dB  frequency is found.
+$$ f_{3dB} = 9.910 \ kHz $$
 
   \item[2.]
   By using the theoretical values to compare the to simulated result of the 3 dB frequency.
 $$f_{t} = A_{t}f_{b}$$
 $$ f_{b} = \frac{f_{t}}{A_{b}} = \frac{1\ MHz}{100 \frac{V}{V}} = 10\ kHz $$
-Which is close to the simulated value from the AC analysis.  
+The theoretical value is close to the simulated value from the AC analysis.  
 
 \end{enumerate}
 \pagebreak
@@ -187,7 +190,7 @@ Which is close to the simulated value from the AC analysis.
 
 \begin{enumerate}
   \item[1.]
-  An op-amp-based integrator was designed with the DC gain equal to -10 V/V where \\R1 = 200$\Omega$ and R2 = 2k$\Omega$ as can be seen in figure 10. The value of the capacitance C of the integrator was calculated so that its 3dB frequency is 50kHz. %Knowing the gain bandwith product of the $\mu$A741 op amp to be 1MHz the capacitance can be calculated with the following formula.
+  An op-amp-based integrator was designed with the DC gain equal to -10 V/V where \\R$_1$ = 200$\Omega$ and R$_2$ = 2k$\Omega$ as can be seen in figure 10. The value of the capacitance C of the integrator was calculated so that its 3dB frequency is 50kHz. %Knowing the gain bandwith product of the $\mu$A741 op amp to be 1MHz the capacitance can be calculated with the following formula.
 $$\omega_0 = \frac{1}{C\cdot R_2} \Leftrightarrow C = \frac{1}{\omega_0 \cdot R_2} \Leftrightarrow C  = \frac{1}{50\text{kHz}\cdot 2\pi \cdot 2k\Omega} = 1.592 nF $$
   \begin{minipage}{\linewidth}
     	\centering       
@@ -252,20 +255,20 @@ By performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48
     
     \vspace{2em}
         
-    The peak voltage is represented by y2 in figure 15: $V_p = 9.935 \ V$ 
+    The peak voltage is represented by y2 in figure 15, $V_p = 9.935 \ V$ 
     
-    The theoretical value was defined as $V_p = 10 \ V$ because that is the input voltage and if the diode is ideal there is no voltage drop over it. The actual value is close to the theoretical but the difference is caused by a small voltage drop in the diode in $MultiSim$. \\
+    The theoretical value of $V_p$ is defined as the input voltage $V_s = 10 \ V$. The actual value of $V_p$ is close to the theoretical but the difference is caused by a small voltage drop in the diode used in $MultiSim$. \\
     
     \begin{minipage}{\linewidth}
     	\centering
         \includegraphics[width=13cm]{4_3.jpg}
-        \captionof{figure}{The voltage difference over one period for measured for the circuit in figure 13 } 
+        \captionof{figure}{The voltage difference over one period, measured for the circuit in figure 13 } 
     \end{minipage}
     
     \begin{minipage}{\linewidth}
     	\centering
         \includegraphics[width=9cm]{table_4_2.png}
-        \captionof{figure}{Data from figure 16}
+        \captionof{figure}{Data from the cursor in figure 16}
     \end{minipage}
     
     \vspace{2em}
@@ -275,7 +278,7 @@ By performing the AC analysis as in task 3.1 the 3dB frequency is found to be 48
   
   \item[$\bold{3.}$]
   
-  	The ripple voltage will then be: $V_r(max) = V_p \cdot 0.02 = 0.1987\ V$. Hence the maximum value of the capacitance can calculate, C: $$ C = \dfrac{V_p}{f R V_r} = \dfrac{V_p}{f R V_p \cdot 0.02} = \dfrac{1}{f R \cdot 0.02} = \dfrac{1}{50 \cdot 10^3 \cdot 0.02} = 1mF $$
+  	The ripple voltage will then be: $V_r(max) = V_p \cdot 0.02 = 0.1987\ V$. Hence the maximum value of the capacitance can calculate: $$ C = \dfrac{V_p}{f R V_r} = \dfrac{V_p}{f R V_p \cdot 0.02} = \dfrac{1}{f R \cdot 0.02} = \dfrac{1}{50 \cdot 10^3 \cdot 0.02} = 1mF $$
   	
   	\begin{minipage}{\linewidth}
     	\centering
