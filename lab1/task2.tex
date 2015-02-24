@@ -28,11 +28,24 @@
 
     The gain-bandwidth product (GBW) of the operational amplifier was found using the values read from the oscilloscope seen in figure X above.
 
-    $$f_{3dB} = $$
+    $$f_{3dB} = f_{H} = 12.6 kHz$$
 
-    $$\text{gain-bandwidth product} = f_{3dB} \cdot (\frac{R_2}{R_1} + 1) = X\text{ Hz} \cdot (\frac{X\ k \Omega}{X\ \Omega} + 1) = X \text{ Hz}$$
+    $$\text{gain-bandwidth product} = f_{3dB} \cdot (\frac{R_2}{R_1} + 1) = 12.6\text{ kHz} \cdot (\frac{9.96\ k \Omega}{100.2\ \Omega} + 1) = 1.26 \text{ MHz}$$
 
-    The nominal gain-bandwidth product of the LM741 operational amplifier is 1 MHz. The measured gain is similar/different compared to the nomial gain.
+    The nominal gain-bandwidth product of the LM741 operational amplifier is 1 MHz. The measured gain is similar compared to the nomial gain.
+
+    \begin{table}[htbp]
+     \centering
+     \caption{Comparison between theoretical and measured value}
+       \begin{tabular}{c|c}
+        \multicolumn{2}{c}{Gain-Bandwidth Product}\\
+        \hline
+        Actual value [MHz] & Theoretical value [MHz] \\
+       \hline
+        1.26          & 1 \\
+       \end{tabular}%
+     \label{tab:addlabel}%
+   \end{table}%
 
 \subsection*{3}
     %Build a voltage follower circuit as shown below:
