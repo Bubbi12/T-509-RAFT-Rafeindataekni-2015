@@ -2,7 +2,7 @@
     %Build a noninverting amplifier circuit as shown below. Use R1 = 100  and R2 = 10 k 
     %so that the amplifier gain is about 100.
 
-    A non inverting amplifier circuit as shown in figure 6 below was built. The amplifier gain should be about 100 so resistances R$_1$ = 100.2 $\Omega$ and R$_2$ = 9.96 k$\Omega$ were used.
+    A non inverting amplifier circuit as shown in figure 6 was built. The amplifier gain should be about 100 $\frac{V}{V}$ so resistances R$_1$ = 100.2 $\Omega$ and R$_2$ = 9.96 k$\Omega$ were used.
 
     \begin{figure}[h!]
         \centering
@@ -26,13 +26,13 @@
         \captionof{figure}{A Bode Analyser of the circuit drawn in figure 6}
     \end{figure}
 
-    The gain-bandwidth product (GBW) of the operational amplifier was found using the values read from the oscilloscope seen in figure 7 above. 
+    The gain-bandwidth product (GBW) of the operational amplifier was found using the values read from the oscilloscope seen in figure 7. 
 
-    $$f_{3dB} = f_{H} = 12.6 kHz$$
+    $$f_{3dB} = f_{H} = 12.6 \ kHz$$
 
     $$\text{gain-bandwidth product} = f_{3dB} \cdot |A_M| = f_{3dB} \cdot (\frac{R_2}{R_1} + 1) = 12.6\text{ kHz} \cdot (\frac{9.96\ k \Omega}{100.2\ \Omega} + 1) = 1.26 \text{ MHz}$$
 
-    The nominal gain-bandwidth product of the LM741 operational amplifier is 1 MHz. The measured gain is similar compared to the nomial gain.
+    The nominal gain-bandwidth product of the LM741 operational amplifier is 1 MHz. The measured gain is similar compared to the nominal gain. The diffrences can be explained by uncertainty due to the equipment that was used in the experiment.
 
     \begin{table}[htbp]
      \centering
@@ -50,12 +50,12 @@
 \subsection*{2.3}
     %Build a voltage follower circuit as shown below:
 
-    A voltage follower circuit was built as seen in figure 8 below.\\
+    A voltage follower circuit was built as seen in figure 8.\\
     
     \begin{figure}[h!]
         \centering
         \includegraphics[width=6cm]{task2_3.png}
-        \captionof{figure}{}
+        \captionof{figure}{The circuit in the task 2.3}
     \end{figure}
 
 
@@ -70,12 +70,12 @@
     \begin{figure}[h!]
         \centering
         \includegraphics[width=10cm]{task2_4.png}
-        \captionof{figure}{}
+        \captionof{figure}{The result from the oscilloscope to determine the slew rate}
     \end{figure}
 
     The slew rate (SR) of the operational amplifier was calculated from the values of the input and output signals observed using the oscilloscope as seen in figure 9.
 
-    $$\dfrac{dV}{dt} \vert _{max} = \frac{V_2-V_1}{dT} = \frac{2.75V-(-2.35) V}{8\mu s} = 0.638 V/\mu s$$
+    $$SR = \dfrac{dV}{dt} \vert _{max} = \frac{V_2-V_1}{dT} = \frac{2.75V-(-2.35) V}{8\mu s} = 0.638 \ V/\mu s$$
 
     \begin{table}[htbp]
      \centering
@@ -88,4 +88,4 @@
        \end{tabular}%
      \caption{Comparison between theoretical and measured value}
      \label{tab:addlabel}%
-   \end{table}%
+   \end{table}% 
