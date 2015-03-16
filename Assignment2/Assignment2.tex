@@ -1,0 +1,50 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {myndir/} }
+
+\usepackage[T1]{fontenc} 
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc} 
+\usepackage{graphics}
+%\usepackage[pdftex]{graphicx}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{subfiles}
+\usepackage[top=2in, bottom=1.5in, left=1in, right=1in]{geometry}
+   
+\title{Assignment 2 \\ T-509-RAFT \\ Electronics} % Title
+
+\author{Arnar Ingi Halldórsson \\ Hjörleifur G. Bergsteinsson \\ Snorri Stefánsson} % Author name
+\begin{document}
+\maketitle % Insert the title, author and date
+
+\begin{tabular}{lr}
+    Due date: 29.03.2015 \\
+    Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
+\qquad \qquad \qquad Adrian Bekasiewicz
+\end{tabular}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+\section*{Introduction}
+
+    The  purpose  of  this  assignment  is  the  simulation  of  elementary  MOS  and  BJT  amplifier stages using $NI \, Multisim$. This report contains the description of the performed simulations, circuit diagrams and results.
+
+\pagebreak
+
+\section*{Task 1: Simulation of the CS Amplifier}
+    \subfile{task1}
+\pagebreak
+\section*{Task 2: Simulation of a Two-Stage BJT Amplifier}
+    \subfile{task2}
+\end{document}
