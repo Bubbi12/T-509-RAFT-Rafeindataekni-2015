@@ -1,0 +1,55 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {myndir/} }
+
+\usepackage[T1]{fontenc} 
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc} 
+\usepackage{graphics}
+%\usepackage[pdftex]{graphicx}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{subfiles}
+\usepackage[top=2in, bottom=1.5in, left=1in, right=1in]{geometry}
+   
+\title{Laboratory Excercise 2 \\ T-509-RAFT \\ Electronics} % Title
+
+\author{Arnar Ingi Halldórsson \\ Hjörleifur G. Bergsteinsson \\ Snorri Stefánsson} % Author name
+\begin{document}
+\maketitle % Insert the title, author and date
+
+\begin{tabular}{lr}
+    Due date: 08.03.2015 \\
+    Teachers:\qquad Slawomir Koziel\\ % Instructor/supervisor
+\qquad \qquad \qquad Adrian Bekasiewicz
+\end{tabular}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+\section*{Introduction}
+
+    The  purpose  of  this  exercise  is to  examine  basic  diode  and  operational  amplifier  circuits. The exercise consists of several tasks; each of them requires performing the following steps:\\
+        1. Setting up a circuit,\\
+        2. Setting up supply voltages/currents and/or input signals, \\
+        3. Preparing measuring devices, \\
+        4. Taking measurements, \\
+        5. Storing the results. \\
+
+\pagebreak
+
+\section*{Task 1: Half-Wave Rectifier}
+    \subfile{task1}
+\pagebreak
+\section*{Task 2: Parameters of Operational Amplifier LM741}
+    \subfile{task2}
+\end{document}
