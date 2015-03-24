@@ -16,6 +16,32 @@ The circuit was built. The resistor, $R_D$, that is defined $470 \Omega$  is mea
 %In particular, find the voltage VT for which noticeable drain current appears,
 The threshold voltage is determined by observing the drain current whilst increasing the voltage at the gate. When the current is significantly large compared to zero the threshold voltage is the voltage at that point. Therefore: $$V_T = 1.9 \ V$$.
 
+   \begin{table}[htbp]
+     \centering
+     \caption{Data for the gate voltage versus drain current}
+       \begin{tabular}{cc}
+       $V_{G_0}$ [V]       & $I_{D_0}$ [mA] \\
+       0.00         & -1.537 \\
+       0.28         & -1.521 \\
+       0.56         & -1.523 \\
+       0.75         & -1.537 \\
+       1.03         & -1.530 \\
+       1.31         & -1.532 \\
+       1.50         & -1.534 \\
+       1.69         & -1.444 \\
+       1.80         & -0.608 \\
+       1.85         & -0.550 \\
+       1.90         & 0.923 \\
+       2.00         & 3.950 \\
+       2.10         & 9.255 \\
+       2.20         & 17.100 \\
+       2.30         & 25.700 \\
+       2.40         & 32.380 \\
+       \end{tabular}%
+     \label{tab:addlabel}%
+   \end{table}%
+
+
 The transconductance factor can be estimated by taking one point from the graph when $V_G > V_T$. The point chosen was $I_{D_0} \approx 10 \ mA = 9.255 \ mA $ and corresponding gate voltage is $V_{G_0} = 2.1 \ V$. Therefore: $$ k = \dfrac{I_{D_0}}{(V_{G_0}-V_T)^2} = \dfrac{9.255 \ mA}{(2.1 \ V - 1.9 \ V)^2} = 231.14 \ \dfrac{mA}{V^2} $$
 
 \begin{figure}[h!]
@@ -24,11 +50,7 @@ The transconductance factor can be estimated by taking one point from the graph 
         \captionof{figure}{Plot of the drain current versus the gate voltage ($I_D$ vs. $V_G$)}
 \end{figure}
 
+This data can also be estimated by measuring the voltage over $R_D$ and then calculating $I_D = \dfrac{V_{DD}-V_D}{R_D}$ as suggested in the assignment. This gives the same results as measuring the current as done here above.
+
 %Note that the parameter k here includes W/L and 0.5 factor
 %that you have in the drain current formula ID = 0.5 kn’W/L(VGS–VT)2, i.e., k = 0.5kn’W/L.
-
-
-
-
-
-
