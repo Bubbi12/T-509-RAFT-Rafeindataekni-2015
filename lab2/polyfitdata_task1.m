@@ -17,7 +17,9 @@ x_zero = find(y_polyfit > 0);
 x_z = x_polyfit(min(x_zero)-1)
 
 
-
+xlabel('Gate voltage [V]','fontsize',14)
+ylabel('Drain current [mA]','fontsize',14)
+title('V_G vs. V_T','fontsize',14)
 
 
 
