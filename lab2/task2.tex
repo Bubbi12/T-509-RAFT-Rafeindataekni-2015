@@ -11,7 +11,7 @@ A common-source MOS amplifier as shown in figure 3 below using BS170 transistor,
     \end{figure}
 
 
-
+\pagebreak
 \subsection*{2.2}
 
 %2. Use Bode Analyzer to measure the AC characteristic of the amplifier in the frequency
@@ -32,7 +32,7 @@ A Bode Analyzer was used to measure the AC characteristic of the amplifier in th
         \captionof{figure}{AC characteristics of the amplifier showing the midband gain of the circuit}
     \end{figure}
 
-From figure 4, the 3dB frequency can be seen as 1000 kHz and from figure 5 the midband gain $A_1 = 24.05 dB = 10^{24.05/20} \frac{V}{V} = 15.94 \frac{V}{V}$
+From figure 4, the 3dB frequency can be seen as 1000 kHz and from figure 5 the midband gain $$A_1 = 24.05 dB = 10^{24.05/20} \frac{V}{V} = 15.94 \frac{V}{V}$$
 
 
 \pagebreak
@@ -44,10 +44,10 @@ From figure 4, the 3dB frequency can be seen as 1000 kHz and from figure 5 the m
     \begin{figure}[h!]
         \centering
         \includegraphics[width=8cm]{Task2-3.png}
-        \captionof{figure}{Oscilloscope plot of the circuit in figure X without $R_{s}$}
+        \captionof{figure}{Oscilloscope plot of the circuit in figure 3}% without $R_{s}$}
     \end{figure}
 
-	Figure X shows the Oscilloscope plot of the circuit in figure X. The green wave is the input voltage and the blue wave is the output voltage. By taking the amplitude of blue wave and dividing by amplitude of the green wave gives the midband gain.
+	Figure 6 shows the oscilloscope plot of the circuit in figure 3. The green wave is the input voltage and the blue wave is the output voltage. By taking the amplitude of blue wave and dividing by amplitude of the green wave gives the midband gain.
 
 	$$ A_{M1} = \frac{473.22 mV}{42.26 mV} = 11.19 \frac{V}{V} $$
 
@@ -56,36 +56,38 @@ From figure 4, the 3dB frequency can be seen as 1000 kHz and from figure 5 the m
     \begin{figure}[h!]
         \centering
         \includegraphics[width=8cm]{Task2-3-Rin.png}
-        \captionof{figure}{Oscilloscope plot of the circuit in figure X with $R_s$}
+        \captionof{figure}{Oscilloscope plot of the circuit in figure 3 after adding $R_s$}
     \end{figure}
 
-	Figure X shows the oscilloscope plot of the circuit in figure X with $R_{s}$. By adding $R_{s}$ to circuit and determine the new midband gain.
+	Figure 7 shows the oscilloscope plot of the circuit in figure 3 with an added $R_{s}$. By adding $R_{s}$ to the circuit, the new midband gain can be determined.
 
 	$$ A_{M2} = \frac{245.19 mV}{42.89 mV} = 5.72 $$
 
-	By using the midband gain from circuit without $R_{s}$ and with $R_{s}$ to find the $R_{in}$. The formula for midband gain with $R_{s}$ would be:  
+	The midband gain from circuit without $R_{s}$ and with $R_{s}$ are used to find the $R_{in}$. The formula for midband gain with $R_{s}$ is:  
 
 	$$A_{M2} = A_{M1} \cdot \frac{R_{in}}{R_{in} + R_{s}} \rightarrow R_{in} = \frac{R_{s}}{\frac{A_{M1}}{A_{M2}}-1}  $$
 
 	$$  R_{in} = \frac{46.4 k \Omega }{\frac{11.19}{5.72}-1} = 48.52 k \Omega$$ 
 
+\pagebreak
+
 	\begin{figure}[h!]
         \centering
         \includegraphics[width=8cm]{Task2-3-Rin.png}
-        \captionof{figure}{Oscilloscope plot of the circuit in figure X without $R_L$}
+        \captionof{figure}{Oscilloscope plot of the circuit in figure 3 without $R_L$}
     \end{figure}
 
-	Figure X shows the Osxilloscope plot of the circuit in figure X without $R_{L}$. By removing the load resistor and finding the midband gain from the amplitude of the waves in figure X.
+	Figure 8 shows the oscilloscope plot of the circuit in figure 3 without $R_{L}$. By removing the load resistor and finding the midband gain from the amplitude of the waves in figure 8.
 
 
 	$$ A_{M3} = \frac{681.05 mV}{42,29 mV} = 16.1 \frac{V}{V} $$
 
-	By using the midband gain from the circuit with $R_{L}$ and without $R_{L}$ to find the $R_{out}$. The formula for midband gain without $R_{L}$ would be:
+	By using the midband gain from the circuit with $R_{L}$ and without $R_{L}$ to find the $R_{out}$. The formula for midband gain without $R_{L}$ is:
 
 
 	$$ A_{M3} = A_{M1} \cdot \frac{R_{L}}{R_{L} + R_{out}} \rightarrow R_{out} = R_{L} \cdot (\frac{A_{3}}{A_{1}}-1) = 460.72 \frac{V}{V}$$
 
-
+\pagebreak
 
 
 
@@ -113,6 +115,11 @@ The transistor parameters obtained in Task 1 were used to determine the values o
 \end{table}%
 
 Parameters obtained by experimentally agree with those determined theoretically. Derivation of theoretical values is in appendix 1.
+
+The theoretical data determined by calculation was close to the measured data. But the difference in the midband gain and the Lower 3dB frequency is caused by the instruments used (the elvis), that is, when determining the threshold voltage. It would have been better to be able take more accurate measurements but the Elvis didn't support more accuracy. When the threshold voltage is off by a small factor the  transconductance factor (k) varies very quickly by multiples of its self. 
+
+%Tala um muninn á midband voltage gaininu?
+
 \pagebreak
 \subsection*{Appendix 1}
 \begin{figure}[h!]

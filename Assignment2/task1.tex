@@ -23,15 +23,15 @@
 
   A theoretical analysis of the circuit in figure 1 was performed to find the voltage gain, input resistance, output resistance, as well as to estimate the lower and upper 3dB frequencies.\\\\
 
-  To find the voltage gain the DC current, I$_D$, was found to be 379$\mu$A and used to calculate g$_m$ = $\frac{1}{513.5 \Omega}$. Using the small signal t-model the midband gain was found to be $\frac{v_o}{v_i} = |-10.615| \frac{V}{V} = 20.518 dB$.\\\\
+  To find the voltage gain the DC current, I$_D$, was found to be 379$\mu$A and used to calculate\\ g$_m$ = $\frac{1}{513.5 \Omega}$. Using the small signal t-model the midband gain was found to be $$\frac{v_o}{v_i} = |-10.615| \frac{V}{V} = 20.518 dB$$.\\\\
 
   The lower and upper 3dB frequencies were found doing a low and high frequency analysis of the circuit. Capacitors C$_1$1, C$_2$ and C$_3$ are much larger than capacitors C$_{gs}$ and C$_{gd}$ so for the low frequency analysis C$_{gs}$ and C$_{gd}$ can be neglected and vice versa.\\
 
-  Calculations from the high frequency analysis using a small signal hybrid-pi model show that f$_{H 3dB} = 2.918$MHz\\
+  Calculations from the high frequency analysis using a small signal hybrid-pi model show that $$f_{H 3dB} = 2.918MHz$$
 
-  Calculations from the low frequency analysis using a small signal T model show that f$_{L 3dB} = 34.18$Hz\\
+  Calculations from the low frequency analysis using a small signal T model show that $$f_{L 3dB} = 34.18Hz$$
 
-  The input resistance of the circuit, R$_{in}$, is the parallell connection of R$_{G1}$ and R$_{G2}$, R$_{in}$ = $R_{G1}||R_{G2}$ = 257k$\Omega$.\\
+  The input resistance of the circuit, R$_{in}$, is the parallell connection of R$_{G1}$ and R$_{G2}$, $$R_{in} = R_{G1}||R_{G2} = 257k\Omega$$
   The output resitance of the circuti, R$_{out}$, is the drain resistance, R$_D$ = 12k$\Omega$.\\\\
 
   All calculations can be seen in Appendix 1.\\
@@ -43,17 +43,17 @@
 
   A simulation was done for the circuit in figure 1 to find the voltage gain, input resistance, output resistance, as well as to estimate the lower and upper 3dB frequencies.\\\\
 
-  The drain current was found using a DC operating point analysis and the results show that I$_D$ = 379.244$\mu$A as seen in figure 2. The voltage at the top node is positive so the current is flowing downward from the perspective of figure 1.\\
+  The drain current was found using a DC operating point analysis and the results show that \\I$_D$ = 379.244$\mu$A as seen in figure 2. The voltage at the top node is positive so the current is flowing downward from the perspective of figure 1.\\
 
   \begin{figure}[h!]
         \centering
-        \includegraphics[width=6cm]{fig1-3-current.png}
+        \includegraphics[width=10cm]{fig1-3-current.png}
         \captionof{figure}{DC operating point analysis used to find the drain current}
   \end{figure}
 
 \pagebreak
 
-  An AC analysis was used to find the gain, f$_{L 3dB}$ and f$_{H 3dB}$. From the results of this analysis seen in figure 3 and 4, the gain is $A_1 = \frac{v_o}{v_i} = 20.521 dB = 10.618 \frac{V}{V}$, f$_{L 3dB} = 35.592$ Hz and f$_{H 3dB} = 2.953$ MHz.\\
+  An AC analysis was used to find the gain, $$f_{L 3dB}$$ $$f_{H 3dB}$$ From the results of this analysis seen in figure 3 and 4, the gain is $$A_1 = \frac{v_o}{v_i} = 20.521 dB = 10.618 \frac{V}{V}$$ $$f_{L 3dB} = 35.592 Hz$$ $$f_{H 3dB} = 2.953MHz$$
 
   \begin{figure}[h!]
         \centering
@@ -63,7 +63,7 @@
 
   \begin{figure}[h!]
         \centering
-        \includegraphics[width=8cm]{fig1-3-fl.png}
+        \includegraphics[width=12cm]{fig1-3-fl.png}
         \captionof{figure}{The AC analysis used to find f$_{L 3dB}$}
   \end{figure}
 
@@ -73,17 +73,19 @@
   
   \begin{figure}[h!]
         \centering
-        \includegraphics[width=8cm]{fig1-3-R-in-multisim.png}
+        \includegraphics[width=10cm]{fig1-3-R-in-multisim.png}
         \captionof{figure}{The circuit with added signal resistance.}
   \end{figure}
 
   \begin{figure}[h!]
         \centering
-        \includegraphics[width=8cm]{fig1-3-R-in.png}
+        \includegraphics[width=10cm]{fig1-3-R-in.png}
         \captionof{figure}{The AC analysis used to find the new gain with input resistance.}
   \end{figure}
 
-The gain with the added resistance is A$_2 = 10^{14.6115/20} = 5.377 dB$. The input resitance can then be calculated using the following formula:$$R_{in} = \frac{R_s}{A_1 / A_2 - A_2} = \frac{R_s \cdot A_2}{A_1 - A_2} = \frac{250k\Omega \cdot 5.377}{10.618 - 5.377} = 256.5 k\Omega$$
+The gain with the added resistance is $$A_2 = 10^{14.6115/20} = 5.377 dB$$
+The input resitance can then be calculated using the following formula:
+$$R_{in} = \frac{R_s}{A_1 / A_2 - A_2} = \frac{R_s \cdot A_2}{A_1 - A_2} = \frac{250k\Omega \cdot 5.377}{10.618 - 5.377} = 256.5 k\Omega$$
 
 \pagebreak
 
@@ -91,17 +93,19 @@ The output resitance, R$_{out}$, was found by removing the load resistance, see 
 
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=8cm]{fig1-3-R-out-multisim.png}
+        \includegraphics[width=14cm]{fig1-3-R-out-multisim.png}
         \captionof{figure}{The circuit with added signal resistance.}
   \end{figure}
 
   \begin{figure}[h!]
         \centering
-        \includegraphics[width=8cm]{fig1-3-R-out.png}
+        \includegraphics[width=14cm]{fig1-3-R-out.png}
         \captionof{figure}{The AC analysis used to find the new gain with input resistance.}
   \end{figure}
 
-Obesrving the gain in figure 8 to be A$_3 = 10^{27.3699/20} dB = 23.361 dB$. The output resistance can then be calculated using the following formula: $$R_{out} = R_L\frac{A_3 - A_1}{A_1} = 10k\Omega \frac{23.361-10.618}{10.618} = 12 k\Omega$$
+Obesrving the gain in figure 8 to be $$A_3 = 10^{27.3699/20} dB = 23.361 dB$$
+The output resistance can then be calculated using the following formula: 
+$$R_{out} = R_L\frac{A_3 - A_1}{A_1} = 10k\Omega \frac{23.361-10.618}{10.618} = 12 k\Omega$$
 
 \pagebreak
 \subsection*{1.4}
