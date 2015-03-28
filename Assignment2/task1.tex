@@ -23,13 +23,13 @@
 
   A theoretical analysis of the circuit in figure 1 was performed to find the voltage gain, input resistance, output resistance, as well as to estimate the lower and upper 3dB frequencies.\\\\
 
-  To find the voltage gain the DC current, I$_D$, was found to be 379$\mu$A and used to calculate\\ g$_m$ = $\frac{1}{513.5 \Omega}$. Using the small signal t-model the midband gain was found to be $$\frac{v_o}{v_i} = |-10.615| \frac{V}{V} = 20.518 dB$$.\\\\
+  To find the voltage gain the DC current, I$_D$, was found to be 379$\mu$A and used to calculate\\ g$_m$ = $\frac{1}{513.5 \Omega}$. Using the small signal t-model the midband gain was found to be $$\frac{v_o}{v_i} = |-10.615| \frac{V}{V} = 20.518 dB$$.\\
 
-  The lower and upper 3dB frequencies were found doing a low and high frequency analysis of the circuit. Capacitors C$_1$1, C$_2$ and C$_3$ are much larger than capacitors C$_{gs}$ and C$_{gd}$ so for the low frequency analysis C$_{gs}$ and C$_{gd}$ can be neglected and vice versa.\\
+  The lower and upper 3dB frequencies were found doing a low and high frequency analysis of the circuit. Capacitors C$_1$, C$_2$ and C$_3$ are much larger than capacitors C$_{gs}$ and C$_{gd}$ so for the low frequency analysis C$_{gs}$ and C$_{gd}$ can be neglected and vice versa.\\
 
-  Calculations from the high frequency analysis using a small signal hybrid-pi model show that $$f_{H 3dB} = 2.918MHz$$
+  Calculations from the high frequency analysis using a small signal hybrid-pi model show that $$f_{H} = 2.918MHz$$
 
-  Calculations from the low frequency analysis using a small signal T model show that $$f_{L 3dB} = 34.18Hz$$
+  Calculations from the low frequency analysis using a small signal T model show that $$f_{L} = 34.18Hz$$
 
   The input resistance of the circuit, R$_{in}$, is the parallell connection of R$_{G1}$ and R$_{G2}$, $$R_{in} = R_{G1}||R_{G2} = 257k\Omega$$
   The output resitance of the circuti, R$_{out}$, is the drain resistance, R$_D$ = 12k$\Omega$.\\\\
@@ -53,18 +53,18 @@
 
 \pagebreak
 
-  An AC analysis was used to find the gain, $$f_{L 3dB}$$ $$f_{H 3dB}$$ From the results of this analysis seen in figure 3 and 4, the gain is $$A_1 = \frac{v_o}{v_i} = 20.521 dB = 10.618 \frac{V}{V}$$ $$f_{L 3dB} = 35.592 Hz$$ $$f_{H 3dB} = 2.953MHz$$
+  An AC analysis was used to find the gain, $f_{L}$ and $f_{H}$. From the results of the AC analysis as seen in figure 3 and 4, the gain is $$A_1 = \frac{v_o}{v_i} = 20.521 dB = 10.618 \frac{V}{V}$$ $$f_{L} = 35.592 Hz$$ $$f_{H} = 2.953MHz$$
 
   \begin{figure}[h!]
         \centering
         \includegraphics[width=14cm]{fig1-3-fh.png}
-        \captionof{figure}{The AC analysis used to find the gain and f$_{H 3dB}$}
+        \captionof{figure}{The AC analysis used to find the gain and f$_{H}$}
   \end{figure}
 
   \begin{figure}[h!]
         \centering
         \includegraphics[width=12cm]{fig1-3-fl.png}
-        \captionof{figure}{The AC analysis used to find f$_{L 3dB}$}
+        \captionof{figure}{The AC analysis used to find f$_{L}$}
   \end{figure}
 
   \pagebreak
