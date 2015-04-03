@@ -14,7 +14,7 @@ The circuit in figure 1 was built using the NI Elvis experimental setup using a 
 % 2. Determine the threshold voltage and the transconductance parameter k of the MOS
 %transistor. 
 %In particular, find the voltage VT for which noticeable drain current appears,
-The threshold voltage was determined by observing the drain current while increasing the voltage at the gate. The drain current, $I_{D_0}$ was found be observing the voltage drop over the resistor $R_D$: $$I_{D_0} = \dfrac{V_{DD}-V_D}{R_D} = \dfrac{15.373 - V_D}{462 \ \Omega}$$ 
+The threshold voltage was determined by observing the drain current while increasing the voltage at the gate. The drain current, $I_{D_0}$ was found by observing the voltage drop over the resistor $R_D$: $$I_{D_0} = \dfrac{V_{DD}-V_D}{R_D} = \dfrac{15.373 - V_D}{462 \ \Omega}$$ 
 
 Table 1 shows the results of these calculation for increasing gate voltage. 
 
@@ -49,7 +49,7 @@ Table 1 shows the results of these calculation for increasing gate voltage.
 The threshold voltage was determined at the point where an increase of the gate voltage caused a significant change in the drain current, around 0.5 mA. The threshold voltage was determined by doing a polynomial fit (in Matlab, see appendix 1) to the data collected and an exact value found to be be $V_T = 1.74 \ V$.
 
 
-The transconductance factor was estimated by taking one point from the graph when $V_G > V_T$. The point chosen was $I_{D_0}  = 10.331 \ mA  \approx 10 \ mA$ and corresponding gate voltage is $V_{G_0} = 2.1 \ V$. Therefore: $$ k = \dfrac{I_{D_0}}{(V_{G_0}-V_T)^2} = \dfrac{9.255 \ mA}{(2.1 \ V - 1.74 \ V)^2} = 79.7 \ \dfrac{mA}{V^2} $$
+The transconductance factor was estimated by taking one point from the graph when $V_G > V_T$. The point chosen was $I_{D_0}  = 10.331 \ mA  \approx 10 \ mA$ and corresponding gate voltage is $V_{G_0} = 2.1 \ V$. Therefore: $$ k = \dfrac{I_{D_0}}{(V_{G_0}-V_T)^2} = \dfrac{10.331 \ mA}{(2.1 \ V - 1.74 \ V)^2} = 79.7 \ \dfrac{mA}{V^2} $$
 
 \begin{figure}[h!]
         \centering
