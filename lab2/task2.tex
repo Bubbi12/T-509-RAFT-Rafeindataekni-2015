@@ -9,7 +9,7 @@ A common-source MOS amplifier as shown in figure 3 below using BS170 transistor 
    \caption{Components}
      \begin{tabular}{rrrrrrrrrr}
      Component   & $R_1$       & $R_2$       & $R_3$       & $R_4$       & $R_L$       & $C_1$       & $C_2$       & $C_3$       & $V_{DD}$ \\
-     Theoretical & $100 \ k \Omega$ & $100 \ k \Omega$ & $470 \ \Omega$ & $470 \ \Omega$ & $1.00 \ k \Omega$ & $1.000 \ \mu F$ & $100.0 \ \mu F$ & $10.00 \ \mu F$ & $15.000 \ V$ \\
+     Suggested & $100 \ k \Omega$ & $100 \ k \Omega$ & $470 \ \Omega$ & $470 \ \Omega$ & $1.00 \ k \Omega$ & $1.000 \ \mu F$ & $100.0 \ \mu F$ & $10.00 \ \mu F$ & $15.000 \ V$ \\
      Measured    & $94 \ k \Omega$ & $98.5 \ k \Omega$ & $462 \ \Omega$ & $462 \ \Omega$ & $1.05 \ k \Omega$ & $1.015 \ \mu F$ & $98.4 \ \mu F$ & $10.09 \ \mu F$ & $15.373 \ V$ \\
      \end{tabular}%
    \label{tab:addlabel}%
@@ -18,7 +18,7 @@ A common-source MOS amplifier as shown in figure 3 below using BS170 transistor 
 
     \begin{figure}[h!]
         \centering
-        \includegraphics[width=6cm]{circuit_task_2.jpg}
+        \includegraphics[width=12cm]{circuit_task_2.jpg}
         \captionof{figure}{Circuit built in task 2}
     \end{figure}
 
@@ -37,14 +37,14 @@ A Bode Analyzer was used to measure the AC characteristic of the amplifier in th
         \includegraphics[width=8cm]{Task2-2-1.png}
         \captionof{figure}{AC characteristics of the amplifier showing the lower 3dB frequency of the circuit}
     \end{figure}
-
+From figure 4, the 3dB frequency can be seen as 1 kHz.
     \begin{figure}[h!]
         \centering
         \includegraphics[width=8cm]{Task2.png}
         \captionof{figure}{AC characteristics of the amplifier showing the midband gain of the circuit}
     \end{figure}
 
-From figure 4, the 3dB frequency can be seen as 1000 kHz and from figure 5 the midband gain $$A_1 = 24.05 dB = 10^{24.05/20} \frac{V}{V} = 15.94 \frac{V}{V}$$
+From figure 5 the midband gain $$A_1 = -15.95 \frac{V}{V} = 24.05 dB $$
 
 
 \pagebreak
@@ -61,7 +61,7 @@ From figure 4, the 3dB frequency can be seen as 1000 kHz and from figure 5 the m
 
 	Figure 6 shows the oscilloscope plot of the circuit in figure 3. The green wave is the input voltage and the blue wave is the output voltage. By taking the amplitude of blue wave and dividing by amplitude of the green wave gives the midband gain.
 
-	$$ A_{M1} = \frac{473.22 mV}{42.26 mV} = 11.19 \frac{V}{V} $$
+	$$ A_{M1} = \frac{473.22 mV}{42.26 mV} = -11.19 \frac{V}{V} = 20.98 dB$$
 
 \pagebreak
 
@@ -73,7 +73,7 @@ From figure 4, the 3dB frequency can be seen as 1000 kHz and from figure 5 the m
 
 	Figure 7 shows the oscilloscope plot of the circuit in figure 3 with an added $R_{s}$. By adding $R_{s}$ to the circuit, the new midband gain can be determined.
 
-	$$ A_{M2} = \frac{245.19 mV}{42.89 mV} = 5.72 $$
+	$$ A_{M2} = \frac{245.19 mV}{42.89 mV} = -5.72 \frac{V}{V} = 15.15 dB$$
 
 	The midband gain from circuit without $R_{s}$ and with $R_{s}$ are used to find the $R_{in}$. The formula for midband gain with $R_{s}$ is:  
 
@@ -92,12 +92,12 @@ From figure 4, the 3dB frequency can be seen as 1000 kHz and from figure 5 the m
 	Figure 8 shows the oscilloscope plot of the circuit in figure 3 without $R_{L}$. By removing the load resistor and finding the midband gain from the amplitude of the waves in figure 8.
 
 
-	$$ A_{M3} = \frac{681.05 mV}{42,29 mV} = 16.1 \frac{V}{V} $$
+	$$ A_{M3} = \frac{681.05 mV}{42,29 mV} = -16.1 \frac{V}{V} = 24.14 dB$$
 
 	By using the midband gain from the circuit with $R_{L}$ and without $R_{L}$ to find the $R_{out}$. The formula for midband gain without $R_{L}$ is:
 
 
-	$$ A_{M3} = A_{M1} \cdot \frac{R_{L}}{R_{L} + R_{out}} \rightarrow R_{out} = R_{L} \cdot (\frac{A_{3}}{A_{1}}-1) = 460.72 \frac{V}{V}$$
+	$$ A_{M3} = A_{M1} \cdot \frac{R_{L}}{R_{L} + R_{out}} \rightarrow R_{out} = R_{L} \cdot (\frac{A_{M3}}{A_{M1}}-1) = 460.72 \Omega$$
 
 \pagebreak
 
@@ -115,9 +115,9 @@ The transistor parameters obtained in Task 1 were used to determine the values o
     \centering
         \begin{tabular}{ c | c | c }
         \hline
-        Circuit Parameters     &   Theory                  & Simulation \\
+        Circuit Parameters     &   Theoretical                  & Experimental \\
         \hline
-        Midband voltage gain    &   25.68 dB			    &   24.05 dB\\
+        Midband voltage gain    &   25.68 dB			    &   20.97 dB\\
         Lower 3dB frequency     &   979.9 Hz                &   1000 Hz\\
         Input Resistance        &   48.1 k$\Omega$           &   48.5 k$\Omega$\\
         Output Resistance       &   462 k$\Omega$            &   460.7 k$\Omega$\\
@@ -126,13 +126,10 @@ The transistor parameters obtained in Task 1 were used to determine the values o
     \label{tab:addlabel}%
 \end{table}%
 
-Parameters obtained by experimentally agree with those determined theoretically. Derivation of theoretical values is in appendix 1.
-
-The theoretical data determined by calculation was close to the measured data. But the difference in the midband gain and the Lower 3dB frequency is caused by the instruments used (the elvis), that is, when determining the threshold voltage. It would have been better to be able take more accurate measurements but the Elvis didn't support more accuracy. When the threshold voltage is off by a small factor the  transconductance factor (k) varies very quickly by multiples of itself. 
-
+Parameters obtained experimentally agree with those determined theoretically except for the midband gain. The 5dB difference between theoretical and experimentally determined midband gain could be explained by inaccurate measurements of the threshold voltage from task 1 or that the small signal model is only an approximation. Derivation of theoretical values can be found in appendix 1. When the threshold voltage is off by a small factor the  transconductance parameter, k, changes very quickly.
 
 \pagebreak
 \subsection*{Appendix 1}
 \begin{figure}[h!]
-\includegraphics[scale = 0.29]{theoretical_task2_1.jpg}
+\includegraphics[scale = 0.23]{theoretical_task2_1.jpg}
 \end{figure}
